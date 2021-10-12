@@ -1,4 +1,4 @@
-import { fetch_posts } from './posts/ActionCreator'
+// import { fetch_posts } from './posts/ActionCreator'
 import  AllPostReducer  from './posts/AllPostReducer'
 import userReducer from './user/CreateUserReducer';
 import PostReducer from './posts/PostReducer';

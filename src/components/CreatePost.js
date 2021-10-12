@@ -6,7 +6,7 @@ function CreatePost(props) {
     const history = useHistory();
     const user=useSelector(state=>state.user.user)
     useEffect(() => {
-        if(localStorage.getItem("user")===null) history.push("/")
+        if(localStorage.getItem("user")===null) history.push("/login")
     }, [user])
     const dispatch=useDispatch()
     const [title,setTitle]=useState("");

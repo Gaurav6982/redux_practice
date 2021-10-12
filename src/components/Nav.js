@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
-import {connect, useDispatch, useSelector} from 'react-redux'
+import { useDispatch, useSelector} from 'react-redux'
 import { logout_user } from '../redux/user/ActionCreator'
 function Nav(props) {
     const dispatch=useDispatch()
@@ -19,7 +19,7 @@ function Nav(props) {
                         <>
                         <li>User Name : { JSON.parse(user.user).name }</li>
                         <li><Link to="/create_post">Create Post</Link></li>
-                        <li><a href="#" onClick={(e)=>handleLogout(e)}>Logout</a></li>
+                        <li><a href="/logout" onClick={(e)=>handleLogout(e)}>Logout</a></li>
                         </>
                     ):
                     (   <>
